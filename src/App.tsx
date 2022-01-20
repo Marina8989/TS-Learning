@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './App.css';
+import { Person } from "./components/Person";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
-      
+       <Person name="Pedro" age={20} email="pedro@gmail.com" />
     </div>
   );
 }
