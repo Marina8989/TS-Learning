@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { FC } React from 'react';
 
 interface Props {
    name: string;
@@ -8,12 +8,12 @@ interface Props {
 
 
 
-export const Person  = (props: Props)  => {
+export const Person: FC  = ({name, email, age}: Props)  => {
   return (
     <div>
-      <h1>{props.name}</h1>
-      <h1>{props.age}</h1>
-      <h1>{props.email}</h1>
+      <h1>{name}</h1>
+      <h1>{age}</h1>
+      <h1>{email}</h1>
     </div>
   );
 }
